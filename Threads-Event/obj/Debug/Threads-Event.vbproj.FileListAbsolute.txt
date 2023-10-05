@@ -1,0 +1,13 @@
+C:\Users\PD-Automation\source\repos\Threads-Event\Threads-Event\bin\Debug\Threads-Event.exe.config
+C:\Users\PD-Automation\source\repos\Threads-Event\Threads-Event\bin\Debug\Threads-Event.exe
+C:\Users\PD-Automation\source\repos\Threads-Event\Threads-Event\bin\Debug\Threads-Event.pdb
+C:\Users\PD-Automation\source\repos\Threads-Event\Threads-Event\bin\Debug\Threads-Event.xml
+C:\Users\PD-Automation\source\repos\Threads-Event\Threads-Event\obj\Debug\Threads-Event.vbproj.AssemblyReference.cache
+C:\Users\PD-Automation\source\repos\Threads-Event\Threads-Event\obj\Debug\Threads-Event.vbproj.SuggestedBindingRedirects.cache
+C:\Users\PD-Automation\source\repos\Threads-Event\Threads-Event\obj\Debug\Threads_Event.Form1.resources
+C:\Users\PD-Automation\source\repos\Threads-Event\Threads-Event\obj\Debug\Threads_Event.Resources.resources
+C:\Users\PD-Automation\source\repos\Threads-Event\Threads-Event\obj\Debug\Threads-Event.vbproj.GenerateResource.cache
+C:\Users\PD-Automation\source\repos\Threads-Event\Threads-Event\obj\Debug\Threads-Event.vbproj.CoreCompileInputs.cache
+C:\Users\PD-Automation\source\repos\Threads-Event\Threads-Event\obj\Debug\Threads-Event.exe
+C:\Users\PD-Automation\source\repos\Threads-Event\Threads-Event\obj\Debug\Threads-Event.xml
+C:\Users\PD-Automation\source\repos\Threads-Event\Threads-Event\obj\Debug\Threads-Event.pdb
