@@ -1,4 +1,8 @@
-﻿Public Class Form1
+﻿Imports System.Threading
+Imports uPLibrary.Networking.M2Mqtt
+Imports uPLibrary.Networking.M2Mqtt.Messages
+
+Public Class Form1
     Dim r As New Random
     Dim maxint As Integer = 20
     Dim maxsleep As Integer = 80
@@ -8,6 +12,11 @@
     Dim Xb As Integer
     Dim T1 As System.Threading.Thread
     Dim T2 As System.Threading.Thread
+    Dim Pass_leader As String
+    ' Declare networking parameter : address, port'
+    Dim Mqclient As MqttClient
+    Dim Addressbroker As String = "192.168.107.114"
+    Dim portbrroker As Integer = 2005
 
 
     Private Sub StartBT_Click(sender As Object, e As EventArgs) Handles StartBT.Click
@@ -55,8 +64,11 @@
         Dim G As Graphics
         G = Me.CreateGraphics
         SyncLock Me
-            G.FillRectangle(New SolidBrush(Me.BackColor), 300, 10, 300, 50)
-            G.DrawString(leader_color & " color is the leader", New Font("Arial", 18), New SolidBrush(Color.Black), 300, 10)
+            If Not (Pass_leader = leader_color) Then
+                G.FillRectangle(New SolidBrush(Me.BackColor), 300, 10, 300, 50)
+                G.DrawString(leader_color & " color is the leader", New Font("Arial", 18), New SolidBrush(Color.Black), 300, 10)
+            End If
+            Pass_leader = leader_color
         End SyncLock
 
     End Sub
@@ -142,4 +154,20 @@
 
 
     End Sub
+
+    Private Sub Form1_Load(sender As Object, e As EventArgs) Handles Me.Load
+        Mqclient = New MqttClient(Addressbroker, portbrroker, False, Nothing, Nothing, MqttSslProtocols.None)
+        Mqclient.Connect("ComID_1", "", "")
+        Try
+            If Mqclient.IsConnected Then
+                ToolStripStatusLabel1.Text = "Connected"
+            Else
+                ToolStripStatusLabel1.Text = "Fail Connected"
+            End If
+        Catch ex As Exception
+
+        End Try
+    End Sub
+
+
 End Class
