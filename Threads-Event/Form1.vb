@@ -18,6 +18,7 @@
         bg = New SolidBrush(Me.BackColor)
         G.FillRectangle(bg, 0, 0, 1250, 500)
         ' Create Finish line '
+        'Comment '
         Dim p As Pen
         p = New Pen(Brushes.Black, 2)
         G.DrawLine(p, 1200, 80, 1200, 270)
